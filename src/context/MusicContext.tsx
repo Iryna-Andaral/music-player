@@ -43,77 +43,77 @@ const songs: Song[] = [
         id: 1,
         title: "I'm Good (Blue)",
         artist: "David Guetta, Bebe Rexh",
-        url: `${import.meta.env.BASE_URL}songs/1691511094_david-guetta-bebe-rexha-im-good-blue.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/1691511094_david-guetta-bebe-rexha-im-good-blue.mp3`,
         duration: "2:55"
     },
     {
         id: 2,
         title: "Beautiful Life",
         artist: "Ace Of Base",
-        url: `${import.meta.env.BASE_URL}songs/Ace Of Base - Beautiful Life.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Ace Of Base - Beautiful Life.mp3`,
         duration: "3:39"
     },  
     {
         id: 3,
         title: "Wheel Of Fortune",
         artist: "Ace Of Base",
-        url: `${import.meta.env.BASE_URL}songs/Ace Of Base - Wheel Of Fortune.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Ace Of Base - Wheel Of Fortune.mp3`,
         duration: "3:53"
     }, 
     {
         id: 4,
         title: "(Everything I Do) I Do It For You",
         artist: "Bryan Adams",
-        url: `${import.meta.env.BASE_URL}songs/Bryan Adams - (Everything I Do) I Do It For You.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Bryan Adams - (Everything I Do) I Do It For You.mp3`,
         duration: "6:25"
     },  
     {
         id: 5,
         title: "Please Forgive Me",
         artist: "Bryan Adams",
-        url: `${import.meta.env.BASE_URL}songs/Bryan Adams - Please Forgive Me.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Bryan Adams - Please Forgive Me.mp3`,
         duration: "5:55"
     },
     {
         id: 6,
         title: "Always remember us this way (remix)",
         artist: "Dj Tons / Lady Gaga",
-        url: `${import.meta.env.BASE_URL}songs/Dj_Tons_Lady_Gaga_-_Always_remember_us_this_way_remix_(mp3.pm).mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Dj_Tons_Lady_Gaga_-_Always_remember_us_this_way_remix_(mp3.pm).mp3`,
         duration: "3:54"
     }, 
     {
         id: 7,
         title: "Believer",
         artist: "Imagine Dragons",
-        url: `${import.meta.env.BASE_URL}songs/imagine-dragons-believer-(meloua.com).mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/imagine-dragons-believer-(meloua.com).mp3`,
         duration: "3:24"
     }, 
     {
         id: 8,
         title: "Nothing Else Matters",
         artist: "Metallica",
-        url: `${import.meta.env.BASE_URL}songs/Metallica - Nothing Else Matters.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Metallica - Nothing Else Matters.mp3`,
         duration: "6:29"
     },
     {
         id: 9,
         title: "The Unforgiven",
         artist: "Metallica",
-        url: `${import.meta.env.BASE_URL}songs/Metallica - The Unforgiven.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Metallica - The Unforgiven.mp3`,
         duration: "6:29"
     },
     {
         id: 10,
         title: "Englishman In New York",
         artist: "Sting",
-        url: `${import.meta.env.BASE_URL}songs/Sting - Englishman In New York.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Sting - Englishman In New York.mp3`,
         duration: "4:29"
     }, 
     {
         id: 11,
         title: "Shape Of My Heart",
         artist: "Sting",
-        url: `${import.meta.env.BASE_URL}songs/Sting - Shape Of My Heart.mp3`,
+        url: `https://github.com/Iryna-Andaral/music-player/blob/gh-pages/songs/Sting - Shape Of My Heart.mp3`,
         duration: "4:33"
     }                              
 ]
