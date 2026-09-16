@@ -47,18 +47,18 @@ export const Playlists = (): React.ReactElement => {
 
 
             {/* Create New Playlists */}
-            <div className="bg-gray-800 p-4 rounded-lg border border-gray-700 mt-1 mb-2">
+            <div className="mt-1 mb-2 rounded-lg border border-gray-700 bg-gray-800 p-4">
                 <h3>Create new playlist</h3>
-                <div className="mt-2 flex items-center gap-2">
+                <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center">
                     <input
                         type="text"
                         placeholder="Playlist Name ..."
-                        className="w-70 flex-none h-10 p-2 border border-gray-600 rounded bg-gray-900 text-white outline-none transition-colors hover:border-gray-400 hover:bg-gray-800 focus:border-gray-400 focus:ring-1 focus:ring-gray-400"
+                        className="h-10 w-full min-w-0 rounded border border-gray-600 bg-gray-900 p-2 text-white outline-none transition-colors hover:border-gray-400 hover:bg-gray-800 focus:border-gray-400 focus:ring-1 focus:ring-gray-400 sm:flex-1"
                         value={newPlaylistName}
                         onChange={(event) => setNewPlaylistName(event.target.value)}
                     />
                     <button
-                        className="h-10 px-3 border border-gray-500 rounded bg-gray-600 text-white transition-colors hover:bg-lime-400 hover:text-gray-900"
+                        className="h-10 w-full rounded border border-gray-500 bg-gray-600 px-3 text-white transition-colors hover:bg-lime-400 hover:text-gray-900 sm:w-auto"
                         onClick={handleCreatePlaylist}
                     >
                         Create
