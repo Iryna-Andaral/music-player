@@ -34,8 +34,8 @@ type MusicContextType = {
   playlists: Playlist[];
   createPlaylist: (name: string) => void;
   addSongToPlaylist: (playlistId: number, song: Song) => void;
-    deletePlaylistConfirmation: (playlist: Playlist) => void;
-    deletePlaylist: (playlistId: number) => void;
+  deletePlaylistConfirmation: (playlist: Playlist) => void;
+  deletePlaylist: (playlistId: number) => void;
 };
 
 const songs: Song[] = [
@@ -121,7 +121,7 @@ const songs: Song[] = [
 export const MusicContext = createContext<MusicContextType | undefined>(undefined);
 
 export const MusicProvider = ({ children }: { children: React.ReactNode }) => {
-    const [allSongs, setAllSongs] = useState<Song[]>(songs)
+    const [allSongs] = useState<Song[]>(songs)
     const [currentTrack, setCurrentTrack] = useState<Song>(songs[0])
     const [currentTrackIndex, setCurrentTrackIndex] = useState<number>(1)
     const [currentTime, setCurrentTime] = useState<number>(0)
@@ -129,6 +129,7 @@ export const MusicProvider = ({ children }: { children: React.ReactNode }) => {
     const [isPlaying, setIsPlaying] = useState<boolean>(false)
     const [volume, setVolume] = useState<number>(1)
     const [playlists, setPlaylists] = useState<Playlist[]>(() => {
+    
         const savedPlaylists = localStorage.getItem("musicPlayerPlaylists");
 
         if (!savedPlaylists) {
@@ -146,7 +147,17 @@ export const MusicProvider = ({ children }: { children: React.ReactNode }) => {
         localStorage.setItem("musicPlayerPlaylists", JSON.stringify(playlists));
     }, [playlists]);
 
-    const play = (song?: Song, index?: number): void => setIsPlaying(true)
+    const play = (song?: Song, index?: number): void => {
+        if (song) {
+            setCurrentTrack(song);
+        }
+
+        if (index !== undefined) {
+            setCurrentTrackIndex(index);
+        }
+
+        setIsPlaying(true);
+    }
     const pause = (): void => setIsPlaying(false)
 
     const handlePlaySong = (song: Song, index: number):void => {
