@@ -134,13 +134,13 @@ export const MusicPlayer = (): React.ReactElement => {
             <span className="text-sm text-gray-300">{formatTime(duration)}</span>
             </div>
             <div className="my-10 flex items-center justify-center gap-4 sm:gap-2">
-                <button className="h-11 w-11 cursor-pointer rounded-full bg-gray-600 font-sans text-white [font-variant-emoji:text] sm:h-9 sm:w-9" onClick={prevTrack}>⏮</button>
+                <button className="h-11 w-11 cursor-pointer rounded-full bg-gray-600 font-sans text-white [font-variant-emoji:text] sm:h-12 sm:w-12" onClick={prevTrack}>⏮</button>
                                
-                <button className="h-14 w-14 cursor-pointer rounded-full bg-lime-500 text-white sm:h-12 sm:w-12 sm:mx-3"
+                <button className="h-14 w-14 cursor-pointer rounded-full bg-lime-500 text-white sm:h-15 sm:w-15 sm:mx-3"
                  onClick={() => (isPlaying ? pause() : play())}>
                     {isPlaying ? "❚❚" : "▶︎"}
                 </button>
-                <button className="h-11 w-11 cursor-pointer rounded-full bg-gray-600 text-white [font-variant-emoji:text] sm:h-9 sm:w-9" onClick={nextTreck}>⏭</button>
+                <button className="h-11 w-11 cursor-pointer rounded-full bg-gray-600 text-white [font-variant-emoji:text] sm:h-12 sm:w-12" onClick={nextTreck}>⏭</button>
             </div>
             <div className="my-10 flex items-center justify-center gap-2">
                 <span>🔊</span>
