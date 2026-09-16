@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
     <MusicProvider>
       <div  className="bg-gray-900 text-white min-h-screen max-w-screen">
        <Navbar />
